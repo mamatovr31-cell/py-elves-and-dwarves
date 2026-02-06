@@ -14,11 +14,6 @@ class ElfRanger(Elf):
         )
         self._bow_level = bow_level
 
-    def play_elf_song(self) -> None:
-        print(f""
-              f"{self.nickname} is playing a "
-              f"song on the {self._musical_instrument}")
-
     def player_info(self) -> str:
         return (
             f"Elf ranger {self.nickname}. "

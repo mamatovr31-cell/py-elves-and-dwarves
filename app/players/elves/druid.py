@@ -14,17 +14,12 @@ class Druid(Elf):
         )
         self._favourite_spell = favourite_spell
 
-    def play_elf_song(self) -> None:
-        print(f""
-              f"{self.nickname} is playing a "
-              f"song on the {self._musical_instrument}")
-
-    def player_info(self) -> str:
-        return (
+        def player_info(self) -> str:
+            return (
             f"Druid {self.nickname}. "
             f"{self.nickname} has a favourite "
             f"spell: {self._favourite_spell}"
-        )
+            )
 
     def get_rating(self) -> int:
         return len(self._favourite_spell)
