@@ -14,7 +14,7 @@ class Druid(Elf):
         )
         self._favourite_spell = favourite_spell
 
-        def player_info(self) -> str:
+    def player_info(self) -> str:
             return (
             f"Druid {self.nickname}. "
             f"{self.nickname} has a favourite "
